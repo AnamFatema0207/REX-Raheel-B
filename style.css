@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #0f1115;
+    color: #eaeaea;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 900px;
+    height: 600px;
+    background: #151820;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2a2f3a;
+    padding-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 22px;
+    color: #00adb5;
+}
+
+.version {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* STATUS PANEL */
+.status-panel {
+    display: flex;
+    justify-content: space-between;
+    background: #1c2030;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.status-item .label {
+    opacity: 0.7;
+    margin-right: 5px;
+}
+
+.value {
+    font-weight: bold;
+}
+
+.listening {
+    color: #4caf50;
+}
+
+.ai-on {
+    color: #00adb5;
+}
+
+/* MIC SECTION */
+.mic-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mic-button {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #00adb5, #007b80);
+    border-radius: 50%;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(0, 173, 181, 0.6);
+    transition: transform 0.2s ease;
+}
+
+.mic-button:hover {
+    transform: scale(1.05);
+}
+
+.hint {
+    margin-top: 12px;
+    opacity: 0.7;
+}
+
+/* ACTION BUTTONS */
+.actions,
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    background: #222633;
+    border: none;
+    border-radius: 6px;
+    color: #eaeaea;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #00adb5;
+    color: #000;
+}
+
+/* LOG PANEL */
+.log-panel {
+    background: #1c2030;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.log-panel h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #00adb5;
+}
+
+.log-box {
+    height: 90px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.log-box p {
+    opacity: 0.85;
+}

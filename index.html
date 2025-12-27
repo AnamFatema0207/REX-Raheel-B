@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rex Desktop Assistant</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>🤖 Rex Desktop Assistant</h1>
+        <span class="version">v1.0</span>
+    </header>
+
+    <!-- STATUS PANEL -->
+    <section class="status-panel">
+        <div class="status-item">
+            <span class="label">🎤 Status:</span>
+            <span class="value listening">Listening</span>
+        </div>
+        <div class="status-item">
+            <span class="label">🔊 Mode:</span>
+            <span class="value">Normal</span>
+        </div>
+        <div class="status-item">
+            <span class="label">🤖 AI Mode:</span>
+            <span class="value ai-on">ON</span>
+        </div>
+    </section>
+
+    <!-- MAIN MIC AREA -->
+    <section class="mic-section">
+        <div class="mic-button">
+            🎙️
+        </div>
+        <p class="hint">Say <b>"Hi Rex"</b> to start</p>
+    </section>
+
+    <!-- QUICK ACTIONS -->
+    <section class="actions">
+    <button id="typeBtn">Type Command</button>
+    <button id="focusBtn">Focus Mode</button>
+    <button id="micBtn">🎙 Start Mic</button>
+    <button id="aiBtn">AI Mode</button>
+</section>
+
+
+    <!-- FEATURE BUTTONS -->
+    <section class="features">
+        <button>📝 Notes</button>
+        <button>⏱ Timers</button>
+        <button>🧾 Logs</button>
+        <button>⚙ Settings</button>
+    </section>
+
+    <!-- ACTIVITY LOG -->
+    <section class="log-panel">
+        <h2>Activity Console</h2>
+        <div class="log-box">
+            <p>[19:20] Rex started</p>
+            <p>[19:21] Listening...</p>
+            <p>[19:22] User: Rex what is the weather</p>
+            <p>[19:22] Rex: Temperature is 30°C</p>
+        </div>
+    </section>
+
+</div>
+
+<script src="../static/script.js"></script>
+
+</body>
+</html>
