@@ -1,0 +1,10 @@
+flask
+requests
+pyautogui
+pywin32
+pyttsx3
+SpeechRecognition
+sounddevice
+gTTS
+pyaudio
+playsound==1.2.2
